@@ -60,4 +60,4 @@ Key Learning:
 
 ## Practice Summary
 
-Solved multiple medium and hard level DSA problems focusing on grids, geometry, combinatorics and mathematical computations.
+Solved multiple medium and hard level DSA problems focusing on grids and mathematical computations.
