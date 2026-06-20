@@ -1,0 +1,380 @@
+# Day 07 - Hashing
+
+## What is Hashing?
+
+### Definition
+
+Hashing is a technique used to store and retrieve data efficiently by converting data into a fixed-size value using a hash function.
+
+The generated value is called:
+
+- Hash Value
+- Hash Code
+- Hash Index
+
+Hashing helps locate data quickly without searching through all elements.
+
+---
+
+## Real-Life Analogy
+
+Imagine a library containing 1000 books.
+
+Instead of searching every shelf, a special formula assigns each book a shelf number.
+
+Using that shelf number, the book can be found instantly.
+
+This is similar to hashing.
+
+---
+
+## Advantages of Hashing
+
+- Fast Search
+- Fast Insertion
+- Fast Deletion
+- O(1) Average Time Complexity
+
+---
+
+## Common Applications
+
+- Dictionaries
+- Frequency Counters
+- Caches
+- Database Indexing
+- Compiler Design
+- Cryptography
+
+---
+
+# Data Structures Using Hashing
+
+## Hash Set
+
+Stores only unique keys.
+
+Examples:
+
+### Python
+
+```python
+mySet = {1, 2, 3}
+```
+
+### C++
+
+```cpp
+unordered_set<int> s;
+```
+
+---
+
+## Hash Map
+
+Stores Key-Value pairs.
+
+Examples:
+
+### Python
+
+```python
+student = {"name": "Rahul"}
+```
+
+### C++
+
+```cpp
+unordered_map<int, string> mp;
+```
+
+---
+
+# What is a Hash Function?
+
+## Definition
+
+A Hash Function converts a key into a hash value (index).
+
+### Example
+
+```cpp
+int hashFunction(int key, int tableSize)
+{
+    return key % tableSize;
+}
+```
+
+For:
+
+```text
+key = 23
+tableSize = 10
+```
+
+Result:
+
+```text
+23 % 10 = 3
+```
+
+Store the data at index 3.
+
+---
+
+## Real-Life Analogy
+
+Assigning students to lockers using the last digit of their roll number.
+
+Example:
+
+```text
+Roll No 101 → Locker 1
+Roll No 112 → Locker 2
+Roll No 123 → Locker 3
+```
+
+---
+
+# Properties of a Good Hash Function
+
+## 1. Deterministic
+
+Same input always produces the same output.
+
+Example:
+
+```text
+Hash(23) = 3
+Hash(23) = 3
+```
+
+---
+
+## 2. Uniform Distribution
+
+Data should be distributed evenly.
+
+Benefit:
+
+- Reduces collisions
+- Improves performance
+
+---
+
+## 3. Efficient Computation
+
+Hash values should be computed quickly.
+
+---
+
+## 4. Pre-image Resistance
+
+Difficult to find the original input from the hash value.
+
+Commonly used in cryptography.
+
+---
+
+## 5. Collision Resistance
+
+Difficult to find two different inputs producing the same hash value.
+
+---
+
+## 6. Fixed Output Length
+
+Output size remains constant regardless of input size.
+
+Example:
+
+```text
+Input: "Hello"
+Output Length: Fixed
+
+Input: Very Large Text
+Output Length: Same Fixed Length
+```
+
+---
+
+# Load Factor
+
+## Definition
+
+Load Factor measures how full a hash table is.
+
+Formula:
+
+Load Factor = Number of Elements / Table Size
+
+### Example
+
+```text
+Elements = 8
+Table Size = 10
+
+Load Factor = 8 / 10 = 0.8
+```
+
+### Importance
+
+Lower Load Factor:
+
+- Fewer Collisions
+- Better Performance
+
+---
+
+# Hashing Techniques
+
+## 1. Division Method
+
+### Formula
+
+h(k) = k mod m
+
+Where:
+
+- k = key
+- m = table size
+
+### Example
+
+```text
+k = 37
+m = 10
+
+37 mod 10 = 7
+```
+
+Store at Index 7.
+
+---
+
+## 2. Multiplication Method
+
+### Formula
+
+h(k) = floor(m × frac(k × A))
+
+Where:
+
+- A is a constant (0 < A < 1)
+
+### Example
+
+```text
+k = 123
+m = 10
+A = 0.618
+
+123 × 0.618 = 76.014
+
+Fractional Part = 0.014
+
+10 × 0.014 = 0.14
+
+floor(0.14) = 0
+```
+
+Store at Index 0.
+
+---
+
+## 3. Mid-Square Method
+
+### Process
+
+1. Square the key
+2. Extract middle digits
+
+### Example
+
+```text
+k = 56
+
+56² = 3136
+
+Middle Digits = 13
+```
+
+Store at Index 13.
+
+---
+
+# What is a Collision?
+
+## Definition
+
+A Collision occurs when two different keys generate the same hash index.
+
+### Hash Function
+
+```cpp
+hash(key) = key % 10
+```
+
+### Example
+
+```text
+12 % 10 = 2
+22 % 10 = 2
+```
+
+Both map to Index 2.
+
+Collision Occurred.
+
+---
+
+# Interview Questions
+
+### What is Hashing?
+
+Technique used for fast storage and retrieval of data.
+
+### What is a Hash Function?
+
+Function that converts keys into indices.
+
+### What is Collision?
+
+When two different keys map to the same index.
+
+### What is Load Factor?
+
+Ratio of stored elements to table size.
+
+### Time Complexity of Hashing?
+
+Average Case:
+
+O(1)
+
+Worst Case:
+
+O(n)
+
+---
+
+# Day 07 Summary
+
+Topics Learned:
+
+- Hashing
+- Hash Functions
+- Hash Tables
+- Hash Sets
+- Hash Maps
+- Load Factor
+- Division Method
+- Multiplication Method
+- Mid-Square Method
+- Collision Concepts
+
+Skills Improved:
+
+- Fast Lookup Techniques
+- Data Storage Optimization
+- Interview-Oriented Hashing Concepts
