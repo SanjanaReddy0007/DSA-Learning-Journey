@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+git 
 int minRemovalForbalanceSort(vector<int>&arr,int k) {
     int n = arr.size();
     sort(arr.begin() , arr.end());
@@ -18,7 +18,7 @@ int minRemovalForbalanceSort(vector<int>&arr,int k) {
        ans = max(ans , cnt);
     }
    
-    return ans;
+    return n - ans;
 }
 
 
