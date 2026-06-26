@@ -61,9 +61,7 @@ class Soluton{
 
 
 //TC: O(nlogn * d) O(d) for the calculation of digit sum 
-//created own custom class and variables bescause for every line of object we need them so ccreated as a seperate class a for every it passed as an object.
-
-
+//created own custom class and variables bescause for every line of object we need them so ccreated as a seperate class a for every it passed as an object
 
 
 

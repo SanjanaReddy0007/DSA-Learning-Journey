@@ -26,6 +26,3 @@ vector<string>reorderParticipants(vector<string>&participants, vector<int>& scor
 
 //TC :- O(nlogn)
 //SC :- O(1)
-
-
-
