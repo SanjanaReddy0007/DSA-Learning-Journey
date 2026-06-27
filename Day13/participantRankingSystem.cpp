@@ -19,7 +19,7 @@ vector<string>reorderParticipants(vector<string>&participants, vector<int>& scor
         ans.push_back(x.second);
     }
 
-    return ans;
+    return ans; 
 
 }
 
