@@ -28,7 +28,7 @@ class Solution {
            list.push_back(Pair(participants[i],score[i],i));
         }
 
-        sort(list.begin() , list.end(),[](Pair<int>&a , Pair<int>&b) {
+        sort(list.begin() , list.end(),[](Pair &a , Pair &b) {
             if(a.score == b.score) {
                 return a.indx < b.indx;
             }
