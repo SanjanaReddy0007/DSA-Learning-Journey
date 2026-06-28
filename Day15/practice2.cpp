@@ -29,6 +29,9 @@ vector<int> relativeSort(vector<int>&arr1 , vector<int>&arr2) {
 }
 
 
+//O(n*m) + O(nlogn) for sorting O(nlogn) and for for arr1 O(n) for arr2 O(m)
+//and for SC:- O(n) for storing all.....
+
 
 
 
