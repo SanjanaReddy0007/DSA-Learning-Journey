@@ -14,8 +14,6 @@ int minCost(int n,int c, vector<int>& a) {
     }
 
     return n - saved;
-
-
 }
 
 
