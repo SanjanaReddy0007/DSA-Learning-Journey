@@ -7,7 +7,7 @@ int minCost(int n,int c, vector<int>& a) {
     int saved = 0;
 
     for(int x:a) {
-        int currentWeight = 1LL*(1LL<<saved);
+        int currentWeight = 1LL*x*(1LL<<saved);
         if(currentWeight <= c) {
             saved++;
         }
