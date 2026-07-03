@@ -27,8 +27,6 @@ void backtrack(string current,int openCount,int closeCount,int m,vector<string>&
 }
 
 
-
-
 vector<string>generatesBrackets(int m) {
     vector<string>result;
     string current = "";
