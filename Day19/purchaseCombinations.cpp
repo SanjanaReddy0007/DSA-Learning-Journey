@@ -14,8 +14,8 @@ void backtrack(vector<int>& budget, vector<int>& combination, int start, vector<
         combination.push_back(prices[i]);
         backtrack(budget - prices[i], combination, i,prices,result);
         combination.pop_back();
-    }
-}
+    } 
+}  
 
 
 vector<vector<int>> purchaseCombinations(vector<int>&prices, int budget) {
