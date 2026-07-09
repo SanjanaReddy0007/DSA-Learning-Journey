@@ -21,6 +21,7 @@ string longestCommonPrefix(vector<string>&words) {
 
     k++;
   }
-}
+} 
+
 
 
