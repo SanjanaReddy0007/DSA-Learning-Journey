@@ -7,6 +7,7 @@ int totalChrgeCircuit(vector<int>& charge, vector<int>& energy)
     int totalCharge = 0;
     int currentcharge = 0;
     int totalEnergy = 0;
+    int start = 0;
     
     int n = charge.size();
 
