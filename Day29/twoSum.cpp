@@ -18,5 +18,5 @@ vector<int>TwoSum(vector<int>&arr , int k)
     return {-1,-1};
 }
 
-//TC :- O(nlogn) 
+//TC :- O(n) 
 //SC :- O(1)
