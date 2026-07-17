@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 vector<int>TwoSum(vector<int>&arr, int k)
 {
     int n = arr.size();
