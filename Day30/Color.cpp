@@ -3,7 +3,7 @@ using namespace std;
 
 //USINGGG 3 POINTERSSSSSSSSSSS
 //TC :- o(N) SC:- o(1)
-
+// 0 - RED , 1 - WHITEEEEEEEEEEE, 2 - BLUE ducth falgggggggggggggg
 
 void ColorsArrange(vector<int>&arr)
 {
