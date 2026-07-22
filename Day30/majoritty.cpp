@@ -7,7 +7,7 @@ int majorityElement(vector<int>&arr)
 {
     int n = arr.size();
     sort(arr.begin(),arr.end());
-    return n/2;
+    return arr[n/2];
 }
 
 //tc:-O(nlogn)
