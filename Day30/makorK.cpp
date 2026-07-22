@@ -19,7 +19,7 @@ int binarySearch(vector<int> &arr, int k)
   return left;
 
 }
-
+ 
 
 bool MAJORITYYYYY(vector<int>& arr,int k)
 { 
