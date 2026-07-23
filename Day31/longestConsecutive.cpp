@@ -14,10 +14,10 @@ int longestConsecutive(vector<int>&arr)
 
 
   for(int i = 0; i < n; i++) {
-     if(arr[i] + arr[i - 1] == 1) {
+     if(arr[i] - arr[i - 1] == 1) {
          count++;
          ans = max(ans,count);
-     } else if(arr[i] + arr[i - 1] == 0) {
+     } else if(arr[i] == arr[i - 1] ) {
         continue;
      } else {
         count=1; //reset count to 1
