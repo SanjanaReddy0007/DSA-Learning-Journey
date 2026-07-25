@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int countSubarr(vector<int>&arr)
+int countSubarr(vector<int>&arr,int target)
 {
     int n = arr.size();
     int count = 0;
