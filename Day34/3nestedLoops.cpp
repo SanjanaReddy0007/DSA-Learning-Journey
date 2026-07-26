@@ -4,7 +4,7 @@ using namespace std;
 int threeClosetSum(int target,vector<int>& arr)
 {
   int n = arr.size();
-  int closetSum = INT_MIN / 2;
+  int closetSum = INT_MAX/ 2;
 
   for(int i = 0; i < n-2; i++) {
     for(int j = i + 1; j < n - 1; j++) {
