@@ -6,6 +6,7 @@ vector<vector<int>> ThreeSumOptimal(vector<int>&arr)
 {
     int n = arr.size();
     vector<int>ans;
+    sort(arr.begin(),arr.end());
     
     for(int i = 0; i < n; i++) {
         if(i >= 1 && arr[i] == arr[i - 1]) contine;
