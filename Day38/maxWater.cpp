@@ -26,7 +26,13 @@ int maxwater(vector<int>& levels) {
 
     while(i < j) {
         int water = (j - i) * min(levl[i] , level[j]);
-        maxwater = max(maxwater , water);
+        maxwater = max(water , maxwater);
+        
+        if(level[i] < level[j]) {
+            i++;
+        } else {
+            j--;
+        }
     }
 
     return maxwater;
