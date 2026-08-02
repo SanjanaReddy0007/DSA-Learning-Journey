@@ -21,4 +21,3 @@ int countPairs(vector<int>& pairs)
 //SC :- O(1)
 
 
-
