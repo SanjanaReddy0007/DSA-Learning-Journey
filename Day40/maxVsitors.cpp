@@ -2,7 +2,7 @@
 using namespace std;
 
 
-in thihestVisitors(vector<int>& records) {
+int thihestVisitors(vector<int>& records) {
     int n = records.size();
     int ans = 0;
 
