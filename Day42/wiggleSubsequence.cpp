@@ -16,7 +16,7 @@ int wigglesubsequence(vector<int>& arr)
        }
     }
 
-    rteurn max(increment,decrement);
+    return max(increment,decrement);
 }
 
 
