@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int cancount(vector<int>& arr, int maxPages, int k) 
+int cancount(vector<int>& arr, int maxPages) 
 {
     int students = 1;
     long long pages = 0;
