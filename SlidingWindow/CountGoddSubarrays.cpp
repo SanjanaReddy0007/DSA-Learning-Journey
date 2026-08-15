@@ -35,3 +35,7 @@ int countGoodSubarrays(vector<int>&arr, int k)
 
 //O(n)
 //O(1)
+
+
+
+

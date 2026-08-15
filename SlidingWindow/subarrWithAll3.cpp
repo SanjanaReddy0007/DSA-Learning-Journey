@@ -3,7 +3,7 @@ using namespace std;
 
 int subarrayWithAll3(string s)
 {
-    int n = arr.size();
+    int n = s.size();
     int ans = 0;
 
     for(int i = 0; i < n; i++) {
@@ -19,9 +19,7 @@ int subarrayWithAll3(string s)
     return ans;
 }
 
-
 //O(n^2) O(1)
-
 
 //O(2n) O(1) BETTER
 int countsubarr(string s) {
@@ -46,7 +44,4 @@ int countsubarr(string s) {
 
     return ans;
 }
-
-
-
 
