@@ -26,11 +26,14 @@ int binaryArraySumtoK(vector<int>&arr, int k)
 }
 
 
-int sumtoK(vector<int>&arr, int n)
+int sumtoK(vector<int>&arr, int k)
 {
-    return binaryArraySumtoK(arr,k) - binaryArraySumToK(arr, n - k);
+    return binaryArraySumtoK(arr,k) - binaryArraySumToK(arr,  k - 1);
 }
 
 
 //O(n)
 //SC :- O(1)
+
+
+
