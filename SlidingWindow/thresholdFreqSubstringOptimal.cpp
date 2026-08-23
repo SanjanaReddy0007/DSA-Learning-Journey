@@ -9,7 +9,7 @@ long long thresoldFreq(vector<int>&recorings, int threshold)
     vector,int>freq(26,0);
 
     for(int i = 0; i < n; i++) {
-        freq[recordings[i] - 'a'];
+        freq[recordings[i] - 'a']++;
         while(isPossible(freq,threshold)) {
             freq[recordings[start] - 'a']--;
             start++;
@@ -31,4 +31,5 @@ bool isPossible(vector<int>& freq, int k) {
 
 //O(n)
 //O(26)
+
 
