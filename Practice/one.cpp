@@ -1,7 +1,5 @@
-#include<bits/stdc++.h>
-using namespace std;
 
-int removeDuplicates(vector<int>&arr)
+int removeDuplicates(vector<int>arr)
 {
 
     if(arr.empty()) {
