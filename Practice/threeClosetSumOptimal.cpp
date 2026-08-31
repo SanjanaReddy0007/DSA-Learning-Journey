@@ -23,7 +23,6 @@ vector<int>closetSum(vector<int>&arr, int target) {
             }
         }
     }
-
     return closetsum;
 }
 
