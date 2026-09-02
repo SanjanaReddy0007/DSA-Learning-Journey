@@ -23,8 +23,6 @@ bool backtrack(int row,int col, string s, vector<vector<int>>&mat, int index) {
     return false;
 }
 
-
-
 bool wordSearch(vector<vector<int>>&matrix, string s) {
     int rows = matrix.size();
     int cols = matrix[0].size();
