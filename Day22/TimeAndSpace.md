@@ -31,8 +31,8 @@ It tells us how fast or slow an algorithm grows with larger inputs.
 
 ---
 
-## Examples
 
+## Examples of tc and sc
 ### O(1)
 
 Accessing an element in an array.
