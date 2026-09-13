@@ -1,0 +1,15 @@
+int minBitFlipToconvertANumber(int source, int target) {
+   
+    int n = source ^ target;
+    int count = 0;
+
+    while(n != 0) {
+        count++;
+        n = n & (n - 1);
+    }
+
+    return count;
+
+}
+
+
