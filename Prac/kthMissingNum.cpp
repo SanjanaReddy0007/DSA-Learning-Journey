@@ -13,7 +13,6 @@ int kthMissingNum(vector<int>&num, int k) {
     }
 
     return low + k;
-
 }
 
 
