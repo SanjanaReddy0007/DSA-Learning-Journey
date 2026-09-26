@@ -13,7 +13,7 @@ int isPossible(vector<int>&arr, int mid, int c) {
     return false;
 }
 
-
+//
 int agressiveCows(vector<int>&arr, int c) {
     int n = arr.size();
     int low = 0;
@@ -31,6 +31,5 @@ int agressiveCows(vector<int>&arr, int c) {
 
     return high;
 }
-
 
 
