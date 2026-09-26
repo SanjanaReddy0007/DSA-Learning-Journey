@@ -21,8 +21,6 @@ int firstOccurance(int arr[] , int n, int k)
 }
 
 
-
-
 //lastoccurance
 int lastOcuurance(int arr[] , int n, int k) {
 
