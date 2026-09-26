@@ -15,6 +15,8 @@ int maxDiffInBookStack(vetoR<int>&pages, int k)
       ans += pairPages[n - 2 - i] - pairPages[i];
    }
 
+
+   
    return ans;
 }
 
