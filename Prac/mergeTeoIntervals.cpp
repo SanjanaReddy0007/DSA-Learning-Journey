@@ -8,4 +8,5 @@ void merge(vector<int>& arr1, int m, vector<int>& arr2, int n) {
     sort(arr1.begin() , arr1.end());
     return arr1;
 }
-
+//O(n^2)
+//O(1)
