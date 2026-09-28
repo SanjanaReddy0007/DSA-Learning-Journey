@@ -12,3 +12,6 @@ vector<int>threeConsecutivesum(int k) {
 
 }
 
+
+
+
