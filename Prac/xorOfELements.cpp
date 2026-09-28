@@ -1,6 +1,6 @@
 
-long long xorOfElements(vector<int>&arr, int k)
-{
+long long xorOfElements(vector<int>&arr, int k) {
+    
     int n = arr.size();
     int count = 0;
 
@@ -16,4 +16,5 @@ long long xorOfElements(vector<int>&arr, int k)
 
     return count;
 }
+
 
