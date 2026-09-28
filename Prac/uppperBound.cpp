@@ -17,3 +17,5 @@ int upperBound(int arr[],int n,int x) {
 }
 
 
+
+//upperbund is val > x
