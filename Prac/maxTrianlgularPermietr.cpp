@@ -8,6 +8,7 @@ int maximumTrianularPerimeter(vector<int>&arr)
     if(arr[i] < arr[i + 1] + arr[i + 2]) {
         return arr[i] + arr[i + 1] + arr[i + 2];
     }
+    
    }
 
 }
