@@ -11,11 +11,12 @@ void Subsequence(int start, vector<int>&v, vector<vector<int>>&ans, int n, int t
         if(i > start && arr[i] == arr[i - 1]) {
             continue;
         }
-    }
+    
 
     v.push_back(arr[i]);
     Subsequence(i + 1, v,ans,n, target - arr[i]);
     v.pop_back();
+ }
 
 }
 
