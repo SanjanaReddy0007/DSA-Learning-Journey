@@ -1,6 +1,6 @@
 
 
-/*int derivedMedianOfTwoSortedGrid(vector<vector<int>>&grid) {
+int derivedMedianOfTwoSortedGrid(vector<vector<int>>&grid) {
     int n = grid.size(), m = grid[0].size();
     vector<int>values;
 
@@ -15,4 +15,4 @@
 
 }
 
-*/
+

@@ -1,5 +1,5 @@
 
-/*vector<string>minWindowSubstringg(string s , string target) {
+vector<string>minWindowSubstringg(string s , string target) {
     int n = s.size();
     unordered_map<int,int>m;
     for(char c:target) {
@@ -31,4 +31,3 @@ int count = 0;
 
 }
 
-*/
