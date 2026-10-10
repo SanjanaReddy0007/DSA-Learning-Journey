@@ -1,5 +1,5 @@
 
-/*int goodSubarrays(vector<int>&arr, int k) {
+int goodSubarrays(vector<int>&arr, int k) {
     int n = arr.size();
    
     int oddCount = 0, validCount = 0;
@@ -25,5 +25,5 @@
 
     return ans;
 
-}*/
+}
 
