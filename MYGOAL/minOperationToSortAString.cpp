@@ -28,3 +28,6 @@ int minOperationToSortAString(string s) {
 
 //O(n)
 //SC :- O(1)
+//bcs very few variables used here so thta the sc is O(1) constant space used here.....
+
+
