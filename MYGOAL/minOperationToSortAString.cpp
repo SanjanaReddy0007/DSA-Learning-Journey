@@ -26,3 +26,5 @@ int minOperationToSortAString(string s) {
 
 }
 
+//O(n)
+//SC :- O(1)
