@@ -1,5 +1,7 @@
 
-   
+class solution {
+public:
+     
      int priority(char ch) {
          if(ch == '^') {
              return 3;
@@ -48,4 +50,8 @@
         }
         return output;
     }
+};
+
+
+
 
