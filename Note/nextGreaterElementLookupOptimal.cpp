@@ -1,4 +1,6 @@
 
+//NEXT GREATER ELEMENT LOOUPPP...........
+
 vector<int>nextGreaterLookupOptimal(vector<int>&num1, vector<int>&num2) {
     int n = num1.size();
     vector<int>res(n,-1);
@@ -21,4 +23,5 @@ vector<int>nextGreaterLookupOptimal(vector<int>&num1, vector<int>&num2) {
     return res;
 }
 
-
+//O(n1 + n2) TC
+//sc :- O(n2)
