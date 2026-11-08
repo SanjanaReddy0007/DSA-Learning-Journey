@@ -28,6 +28,4 @@ vector<int> asteroidCollision(vector<int>& arr) {
 
         return ans;
     }
-};
-
 
