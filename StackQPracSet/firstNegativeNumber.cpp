@@ -18,9 +18,5 @@ vector<int>FirstNegativeNumber(vector<int>&arr, int m, int len) {
 
     return res;
 }
-
 //O(len * m) 
 //SC :- O(len - m + 1)
-
-
-
