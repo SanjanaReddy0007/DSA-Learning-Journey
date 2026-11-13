@@ -1,0 +1,21 @@
+
+
+int assignCookies(vector<int>&greed,vector<int>&sizes) {
+    sort(greed.begin() , greed.end());
+    sort(sizes.begin() , sizes.end());
+   
+    int i = 0, j = 0;
+    while(i < greed.size() && j < sizes.size()) {
+        if(sizes[j] >= greed[i]) {
+            i++;
+            j++;
+        } else {
+            j++;
+        }
+    }
+
+    return i;
+}
+
+//using greedy TC :- O(nlogn + mlogm)
+

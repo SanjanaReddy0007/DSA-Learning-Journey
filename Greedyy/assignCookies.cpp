@@ -5,7 +5,7 @@ int assignCookies(vector<int>&greed,vector<int>&sizes) {
      
     int i = 0 , j = 0;
     while(int i < greed.size() && j < sizes.size()) {
-       if(sizes[i] >= greed[i]) {
+       if(sizes[j] >= greed[i]) {
           i++;
           j++;
        } else {
