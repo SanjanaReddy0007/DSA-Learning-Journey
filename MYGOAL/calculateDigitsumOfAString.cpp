@@ -1,0 +1,22 @@
+
+string digitSum(string s, int k) {
+    int n = s.size();
+ 
+    while( s.size() > k) {
+        string tmp;
+        int n = s.size();
+ 
+        for(int i = 0; i < n; i+= k) {
+            int val = 0;
+            for(int j = i + 1; j < min(i + k ,n); j++) {
+                val += s[j] + '0';
+            }
+            tmp.append(to_string(val));
+        }
+        s = tmp; 
+    }
+ 
+    return s;
+
+}
+
