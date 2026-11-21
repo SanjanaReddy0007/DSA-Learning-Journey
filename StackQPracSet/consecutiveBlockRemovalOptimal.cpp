@@ -1,29 +1,29 @@
 
-string removalChars(string s,int k) {
-    int n = s.length();
-    stack<pair<char,int>>stk;
+int findLuminary(vector<vecotr<int>>&inter, int n) {
+    int strat = 0,end = n - 1;
 
-    for(int i = 0; i < n; i++) {
-        if(!stk.empty() && st.top().first == s[i]) {
-            stk.top().second++;
+    while(start < end) {
+        if(knows(inter,start,end,n)) {
+            start++;
         } else {
-            stk.push({s[i] , 1});
+            end--;
         }
+    }
+    int p = start;
 
-        if(stk.top().second == k) {
-           stk.pop();
+    for(int i = 0 ;i < n; i++) {
+         if(i != p && inter[p[i]] == 1) {
+            return -1;
+         }
+    }
+
+    for(int o = 0; i < n; i++) {
+        if(i != p && inter[i][p] == 0) {
+            return -1;
         }
     }
 
-    string res = "";
-    while(!stk.empty()) {
-        int count = stk.top().second;
-        while(count--) {
-            res.push_back(stk.top().first);
-        }
-        stk.pop();
-    }
-    
-    return res;
+    return p;
+
 }
 
